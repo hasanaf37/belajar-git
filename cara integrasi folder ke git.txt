@@ -1,0 +1,4 @@
+Cara integrasi folder ke repository GitHub
+
+1. buka folder nya kemudian klik kanan pilih gitbash
+2. di cli ketikkan perintah git init , git add *, git commit -m "first commit" , git branch -M main, git remote add origin https://github.com/hasanaf37/belajar-git.git , git push -u origin main
