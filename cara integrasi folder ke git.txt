@@ -4,4 +4,12 @@ Cara integrasi folder ke repository GitHub
 2. di cli ketikkan perintah git init , git add *, git commit -m "first commit" , git branch -M main, git remote add origin https://github.com/hasanaf37/belajar-git.git , git push -u origin main
 
 
+<<<<<<< HEAD
 perubahan dikit uji coba
+=======
+Git pull & Request
+
+command menambahkan branch  - >   git checkout -b feat/branch baru
+						  ( nama branch nya )
+
+>>>>>>> ecc61bd2f56090d13ccb86009167fd36b9b72657
