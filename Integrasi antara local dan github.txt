@@ -1,0 +1,83 @@
+💡 Langkah-langkah Integrasi File Lokal dengan GitHub
+🧩 1. Buat Repositori di GitHub
+
+Masuk ke akun GitHub
+.
+
+Klik tombol New Repository.
+
+Beri nama repositori, misalnya project-pertama.
+
+Pilih Public (agar bisa diakses siapa saja) atau Private (untuk pribadi).
+
+Klik Create repository.
+
+Setelah repositori dibuat, GitHub akan menampilkan beberapa perintah Git untuk menghubungkan ke lokal — simpan halaman itu.
+
+🖥️ 2. Siapkan Folder Lokal di Komputer
+
+Buat folder di komputer, misalnya project-pertama.
+
+Buka folder tersebut di terminal atau Git Bash.
+
+Jalankan perintah untuk menjadikannya repositori Git lokal:
+
+git init
+
+
+Perintah ini membuat folder .git di dalam proyekmu, artinya folder itu kini sudah terhubung ke sistem Git.
+
+📂 3. Tambahkan File ke Repositori Lokal
+
+Buat atau salin file yang ingin kamu unggah ke GitHub.
+
+Tambahkan semua file ke staging area:
+
+git add .
+
+
+Simpan perubahan dengan commit:
+
+git commit -m "Menambahkan file awal"
+
+🌐 4. Hubungkan ke Repositori GitHub
+
+Gunakan URL dari repositori GitHub yang tadi dibuat, misalnya:
+https://github.com/username/project-pertama.git
+
+Lalu jalankan:
+
+git remote add origin https://github.com/username/project-pertama.git
+
+
+“origin” adalah nama default untuk koneksi jarak jauh (remote repository).
+
+🚀 5. Upload (Push) ke GitHub
+
+Kirim semua file lokal ke GitHub dengan perintah:
+
+git push -u origin main
+
+
+Jika GitHub-mu masih menggunakan default branch bernama master, ganti main menjadi master.
+
+🔄 6. Sinkronisasi Selanjutnya
+
+Jika kamu mengubah file di lokal:
+
+git add .
+git commit -m "Perubahan terbaru"
+git push origin main
+
+
+Jika kamu mengubah file langsung di GitHub, ambil pembaruannya ke lokal:
+
+git pull origin main
+
+✅ Hasil Akhir
+
+Sekarang folder lokal kamu terintegrasi penuh dengan GitHub, sehingga:
+
+Semua perubahan di lokal bisa dikirim ke GitHub.
+
+Semua pembaruan di GitHub bisa diunduh ke lokal.
